@@ -30,7 +30,6 @@ public class Parte1 {
             System.out.println(s);
             n--;
         }
-
         return s;
     }
     public static String cuatro(int n){
@@ -47,7 +46,7 @@ public class Parte1 {
         int m,n=x;
         StringBuilder s= new StringBuilder();
         System.out.println("5.- "+n+":");
-        while(n>0) {
+        while(n>0) {        //triángulo
             m=n-1;
             while (m>0){
                 System.out.print(" ");
@@ -64,7 +63,7 @@ public class Parte1 {
         int m,n=x;
         StringBuilder s= new StringBuilder();
         System.out.println("6.- "+n+":");
-        while(n>0) {
+        while(n>0) {        //triángulo
             m=n-1;
             while (m>0){
                 System.out.print(" ");
@@ -75,7 +74,7 @@ public class Parte1 {
             System.out.println(s);
             n--;
         }
-        while(n<(x-1)) {
+        while(n<(x-1)) {        //triángulo inverso
             m=n+1;
             while (m>0){
                 System.out.print(" ");
@@ -91,7 +90,7 @@ public class Parte1 {
         int m,n=x,L;
         StringBuilder s= new StringBuilder();
         System.out.println("7.- "+n+":");
-        while(n>0) {
+        while(n>0) {        //triángulo
             m=n-1;
             while (m>0){
                 System.out.print(" ");
@@ -105,7 +104,7 @@ public class Parte1 {
         L=s.length()/2;
         if (L<4) System.out.println((new StringBuilder(s)).replace(L-1,L+2,"FB!"));
         else System.out.println((new StringBuilder(s)).replace(L-3,L+4,"FELIPE!"));
-        while(n<(x-1)) {
+        while(n<(x-1)) {        //triángulo inverso
             m=n+1;
             while (m>0){
                 System.out.print(" ");

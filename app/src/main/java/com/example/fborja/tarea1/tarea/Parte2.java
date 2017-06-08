@@ -11,17 +11,17 @@ import java.util.List;
 public class Parte2 {
 
     public static List<Integer> generar(int n){
-        int i,N=n;
+        int i,N=n;                  //N: número inicial, n: número disminuyente
         ArrayList<Integer> lista=new ArrayList<>();
             for (i=2;i<N;i++){
                 if (esprimo(i)) {
-                    while (n%i==0){
+                    while (n%i==0){ //mientras el primo sea divisible es agregado a la lista
                         lista.add(i);
                         n /= i;
                     }
                 }
             }
-        for (int i2 : lista)
+        for (int i2 : lista)        //imprime la lista
             System.out.print(i2+" ");
 
         System.out.print("= "+N);
@@ -34,7 +34,7 @@ public class Parte2 {
                 return false;
         return true;
     }
-    public static String tikitaka(int n){
+    public static String tikitaka(int n){ //Fizzbuzz es muy mainstream
         String str="",salida="";
         for (int i = 1 ;i<=n;i++){
             if (i%15==0) {

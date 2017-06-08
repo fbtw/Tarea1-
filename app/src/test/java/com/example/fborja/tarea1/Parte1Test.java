@@ -48,12 +48,12 @@ public class Parte1Test {
     }
     @Test
     public void seisTest() throws Exception {
-        String txt=Parte1.seis(20);
+        String txt=Parte1.seis(10);
         assertEquals("*",txt);
     }
     @Test
     public void sieteTest() throws Exception {
-        String txt=Parte1.siete(6);
+        String txt=Parte1.siete(7);//iniciales de 1 a 4, nombre de 5 en adelante
         assertEquals("*",txt);
     }
 }
